@@ -1,6 +1,6 @@
 from collections import namedtuple
 from collections import deque
-from random import randint, random
+from random import randint
 
 Point = namedtuple('Point', 'x,y' )
 pt = Point(1,-4)

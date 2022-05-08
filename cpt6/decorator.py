@@ -1,22 +1,11 @@
 from time import sleep, time
-def f():
-    sleep(0.3)
-    
-def g():
-    sleep(0.5)
-    
-t = time()
-f()
-print('f took', time() - t)
+def f(sleep_time = 0.1):
+    sleep(sleep_time)
 
-t = time()
-g()
-print('g took', time() - t)
-
-def measure(func):
+def measure(func,*args, **kwargs):
     t = time()
-    func()
+    func(*args, **kwargs)
     print(func.__name__, 'took', time() - t)
     
-measure(f)
-measure(g)
+measure(f,1)
+measure(f,sleep_time = 0.5)

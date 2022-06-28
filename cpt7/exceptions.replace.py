@@ -3,7 +3,7 @@ class NotFoundError(Exception):
 
 vowels = {'a' : 11, 'e' : 12, 'i' : 13, 'o' : 14, 'u' : 15}
 
-try :
+try:
     pos = vowels['y']
 except KeyError as ke:
     raise NotFoundError(*ke.args) from None

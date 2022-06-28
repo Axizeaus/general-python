@@ -9,4 +9,3 @@ for a in range(n):
             if 42 * a + 17 * b + c == 5096:
                 found = True
                 print(a,b,c)
-                

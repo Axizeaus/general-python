@@ -1,5 +1,6 @@
 from itertools import permutations
 
-a = list('123')
-permu = permutations(a)
+a = [1, 2, 3]
+permu = permutations(a, 3) 
+
 print(list(permu))
